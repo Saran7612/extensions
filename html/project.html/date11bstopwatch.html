@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <title>Stop watch</title>
+  </head>
+  <body>
+    <!-- <h1 class="Display-1 text-danger">Stop Watch</h1> -->
+    <!-- <p id="time" >00:00:00</p> -->
+    <!-- <button class="btn btn-primary">start</button>
+ -->
+
+    <p id="time">00000000</p>
+
+    <script>
+      var time = document.getElementById('time');
+      let seconds = 0;
+      let minutes = 0;
+      let hours =0;
+
+      function setTime() {
+        seconds++;
+        minutes+=Math.floor(seconds/60);
+        seconds = seconds%60;
+        hours+=Math.floor(minutes/60);
+        minutes=Math.floor(minutes%60);
+        time.innerHTML = hours+":"+minutes+":"+seconds;
+      }
+      setInterval(setTime, 1);
+
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.9.2/umd/popper.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.1.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

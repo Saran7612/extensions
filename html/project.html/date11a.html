@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta name="Description" content="Enter your description here" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- <link rel="stylesheet" href="assets/css/style.css"> -->
+    <title>page</title>
+  </head>
+  <body>
+    <button data-collegename="snsct" class="buy">click here1</button>
+    <button data-collegename="snsce" class="buy">click here2</button>
+    <button data-collegename="psg" class="buy">click here3</button>
+    <button data-collegename="srec" class="buy">click here4</button>
+    <button data-collegename="kpr" class="buy">click here5</button>
+    <script>
+
+    const button=document.querySelectorAll('button.buy')
+
+      button.forEach(function(buts){
+        buts.addEventListener("click",collegeHandler);
+      })
+
+
+          function collegeHandler(event){
+              alert('the handler'+'buts');
+              console.log(event.target.dataset)
+              document.write('you name is please try here'+event.target.dataset.collegename);
+          }
+      console.log(button)
+      
+    </script>
+  </body>
+</html>

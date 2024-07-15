@@ -1,0 +1,58 @@
+body{
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    background-color: rgb(218, 207, 207);
+    margin: 0;
+    padding: 20px;
+}
+.container{
+    max-width: 800px;
+    margin: auto;
+    background-color: rgb(168, 118, 218);
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.1);
+    
+}
+.resume{
+    display: flex;
+   justify-content: left;
+    height: 200px;
+    width: 600px;
+}
+.header,.section{
+    margin-bottom: 10px;
+    color: rgb(42, 24, 24);
+}
+.header h1{
+    border-bottom: 2px solid #463535;
+    padding-bottom:auto;
+    margin: 20px;
+}
+.header p {
+    margin: 5px 0;
+}
+.section h2{
+    border-top: 2px solid #463535;
+    text-emphasis-color: #760404;
+}
+.details,.education{
+    margin-top: 2px solid #464646;
+}
+.details h3,.education h3 {
+    margin: 5px 0;
+    cursor: pointer;
+    color: #480860;
+}
+.details p,.education p {
+    margin: 2px 0;
+}
+.project{
+    display: none;
+    margin-top: 10px;
+    cursor: unset;
+    color: #cd6cf0;
+}
+.details ul{
+    margin: 0;
+    padding: left 20px; 
+}
